@@ -1,0 +1,4 @@
+欢迎来到**Try Redis**，[Redis](http://redis.io)数据库的演示！
+
+请输入 [TUTORIAL](#run) 以开始简短的教程，输入 [HELP](#run) 以查看支持的
+命令列表，或输入任何有效的Redis命令来使用数据库。
