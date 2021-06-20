@@ -44,7 +44,7 @@ Conferences and meetups
 2. 如果您得到良好的反馈，请执行以下操作以提交补丁：
 
     1. Fork[官方Github仓库](http://github.com/redis/redis)。
-    2. Clone您的fork: `git clone git@github.com:<your-username>/redis.git`
+    2. Clone您的fork：`git clone git@github.com:<your-username>/redis.git`
     3. 确保您能通过所有的测试：`make && make test`
     4. 创建一个主题分支：`git checkout -b new-feature`
     5. 添加测试并实现您的更改。
