@@ -9,7 +9,7 @@
 * Redis实现的[命令的完整列表](https://redis.io/commands)，以及每个命令的完整文档。
 * [管线](/topics/pipelining.md)：了解如何一次发送多个命令，
 节省RTT时间。
-* [Redis发布/订阅](topics/pubsub.md)：Redis 是一个快速稳定的发布/订阅消息系统！一探究竟。
+* [Redis发布/订阅](topics/pubsub.md)：Redis是一个快速稳定的发布/订阅消息系统！一探究竟。
 * [Redis Lua脚本](/commands/eval.md)：Redis Lua脚本功能文档。
 * [调试Lua脚本](/topics/ldb.md)：Redis 3.2为Redis脚本引入了原生Lua调试器。
 * [内存优化](/topics/memory-optimization.md)：了解Redis如何
