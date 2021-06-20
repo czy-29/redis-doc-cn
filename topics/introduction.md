@@ -4,7 +4,7 @@ Redis简介
 Redis是一个开源（BSD协议）的内存**数据结构存储**，可用作数据库、缓存和消息中间件。Redis提供了诸如
 [字符串](/topics/data-types-intro.md#strings)、[散列](/topics/data-types-intro.md#hashes)、[列表](/topics/data-types-intro.md#lists)、[集合](/topics/data-types-intro.md#sets)、带范围查询的[有序集合](/topics/data-types-intro.md#sorted-sets)、[位图](/topics/data-types-intro.md#bitmaps)、[hyperloglogs](/topics/data-types-intro.md#hyperloglogs)、[地理空间索引](/commands/geoadd.md)和[流](/topics/streams-intro.md)等数据结构。Redis内置[replication](/topics/replication.md)、[Lua脚本](/commands/eval.md)、[LRU淘汰](/topics/lru-cache.md)、[事务](/topics/transactions.md)和不同级别的[磁盘持久化存储](/topics/persistence.md)，并通过[Redis哨兵](/topics/sentinel.md)和可自动分区的[Redis集群](/topics/cluster-tutorial.md)提供高可用性。
 
-您可以对这些类型运行**原子操作**，
+您可以对这些类型执行**原子操作**，
 例如[附加到字符串](/commands/append.md)；
 [增加散列中的值](/commands/hincrby.md)；[将元素推入列表](/commands/lpush.md)；
 [计算集合交集](/commands/sinter.md)，
