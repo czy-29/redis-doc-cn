@@ -1,0 +1,23 @@
+集合是一种非常方便的数据类型，但由于它们是未排序的，因此它们不能很好地解决
+许多问题。这也是为什么Redis 1.2引入了有序集合。
+
+有序集合类似于常规集合，但现在每个值都有一个关联的分数。
+该分数用于对集合中的元素进行排序。
+
+<pre></code>
+    <a href="#run">ZADD hackers 1940 "Alan Kay"</a>
+    <a href="#run">ZADD hackers 1906 "Grace Hopper"</a>
+    <a href="#run">ZADD hackers 1953 "Richard Stallman"</a>
+    <a href="#run">ZADD hackers 1965 "Yukihiro Matsumoto"</a>
+    <a href="#run">ZADD hackers 1916 "Claude Shannon"</a>
+    <a href="#run">ZADD hackers 1969 "Linus Torvalds"</a>
+    <a href="#run">ZADD hackers 1957 "Sophie Wilson"</a>
+    <a href="#run">ZADD hackers 1912 "Alan Turing"</a>
+</code></pre>
+
+在这些例子中，分数是出生年份，值是
+著名黑客的名字。
+
+<pre></code>
+    <a href="#run">ZRANGE hackers 2 4</a> => 1) "Claude Shannon", 2) "Alan Kay", 3) "Richard Stallman"
+</code></pre>

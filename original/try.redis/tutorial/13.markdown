@@ -1,0 +1,23 @@
+Sets are a very handy data type, but as they are unsorted they don't work well
+for a number of problems. This is why Redis 1.2 introduced Sorted Sets.
+
+A sorted set is similar to a regular set, but now each value has an associated score.
+This score is used to sort the elements in the set.
+
+<pre></code>
+    <a href="#run">ZADD hackers 1940 "Alan Kay"</a>
+    <a href="#run">ZADD hackers 1906 "Grace Hopper"</a>
+    <a href="#run">ZADD hackers 1953 "Richard Stallman"</a>
+    <a href="#run">ZADD hackers 1965 "Yukihiro Matsumoto"</a>
+    <a href="#run">ZADD hackers 1916 "Claude Shannon"</a>
+    <a href="#run">ZADD hackers 1969 "Linus Torvalds"</a>
+    <a href="#run">ZADD hackers 1957 "Sophie Wilson"</a>
+    <a href="#run">ZADD hackers 1912 "Alan Turing"</a>
+</code></pre>
+
+In these examples, the scores are years of birth and the values are the names
+of famous hackers.
+
+<pre></code>
+    <a href="#run">ZRANGE hackers 2 4</a> => 1) "Claude Shannon", 2) "Alan Kay", 3) "Richard Stallman"
+</code></pre>
