@@ -1,0 +1,23 @@
+到目前为止，我们探索了让您向列表添加元素的命令，
+以及让您检索列表范围的 [LRANGE](#help)。Redis列表的一个基本
+功能是能够移除列表头部或尾部的元素，同时
+将其返回给客户端。
+
+[LPOP](#help) 从列表中删除第一个元素并返回它。
+
+<pre><code>
+    <a href="#run">LPOP friends</a> => "Sam"
+</code></pre>
+
+[RPOP](#help) 从列表中删除最后一个元素并返回它。
+
+<pre><code>
+    <a href="#run">RPOP friends</a> => "Bob"
+</code></pre>
+
+请注意，列表现在只有一个元素：
+
+<pre><code>
+    <a href="#run">LLEN friends</a> => 1
+    <a href="#run">LRANGE friends 0 -1</a> => 1) "Alice"
+</code></pre>
