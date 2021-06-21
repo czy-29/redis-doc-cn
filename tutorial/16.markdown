@@ -1,0 +1,9 @@
+*Try Redis* 教程到此结束。请随意
+使用此控制台。
+
+查看以下链接以继续了解Redis。
+
+* [Redis文档](/documentation.md)
+* [命令参考](http://redis.io/commands)
+* [使用Redis实现Twitter克隆](/topics/twitter-clone.md)
+* [Redis数据类型介绍](/topics/data-types-intro.md)
