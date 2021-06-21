@@ -1,0 +1,20 @@
+[SISMEMBER](#help) 测试给定的值是否在集合中。如果值存在则返回 *1*，否则返回 *0*。
+
+<pre></code>
+    <a href="#run">SISMEMBER superpowers "flight"</a> => 1
+    <a href="#run">SISMEMBER superpowers "reflexes"</a> => 0
+</code></pre>
+
+[SMEMBERS](#help) 返回该集合的所有成员的列表。
+
+<pre></code>
+    <a href="#run">SMEMBERS superpowers</a> => 1) "flight", 2) "x-ray vision"
+</code></pre>
+
+[SUNION](#help) 组合两个或多个集合并返回所有元素的列表。
+
+<pre></code>
+    <a href="#run">SADD birdpowers "pecking"</a>
+    <a href="#run">SADD birdpowers "flight"</a>
+    <a href="#run">SUNION superpowers birdpowers</a> => 1) "pecking", 2) "x-ray vision", 3) "flight"
+</code></pre>
