@@ -1,0 +1,11 @@
+[LRANGE](#help) 给出了列表的一个子集。它将您要检索的第一个元素的索引
+作为其第一个参数，并将您要检索的最后一个元素的索引
+作为其第二个参数。第二个参数的值-1表示
+检索元素直到列表末尾，-2表示
+检索到倒数第二个，依此类推。
+
+<pre><code>
+    <a href="#run">LRANGE friends 0 -1</a> => 1) "Sam", 2) "Alice", 3) "Bob"
+    <a href="#run">LRANGE friends 0 1</a> => 1) "Sam", 2) "Alice"
+    <a href="#run">LRANGE friends 1 2</a> => 1) "Alice", 2) "Bob"
+</code></pre>
