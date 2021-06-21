@@ -1,0 +1,16 @@
+[RPUSH](#help) 和 [LPUSH](#help) 命令都是可变参数的，因此您可以在同一命令执行中指定多个元素。
+
+<pre><code>
+    <a href="#run">RPUSH friends 1 2 3</a> => 4
+</code></pre>
+
+<span class="tip">
+提示：RPUSH 和 LPUSH 返回操作后列表的总长度。
+</span>
+
+您还可以使用 [LLEN](#help) 获取列表的当前长度。
+
+<pre><code>
+    <a href="#run">LLEN friends</a> => 4
+</code></pre>
+
