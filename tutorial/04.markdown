@@ -1,0 +1,49 @@
+Redis可以被告知一个键应该只在一定的时间长度内存在。
+这是通过 [EXPIRE](#help) 和 [TTL](#help) 命令
+以及类似的 [PEXPIRE](#help) 和 [PTTL](#help) 命令（
+使用以毫秒为单位的时间而不是秒来进行操作）完成的。
+
+<pre><code>
+    <a href="#run">SET resource:lock "Redis Demo"</a>
+    <a href="#run">EXPIRE resource:lock 120</a>
+</code></pre>
+
+这会导致键 *resource:lock* 在120秒内被删除。您可以
+使用 [TTL](#help) 命令测试键将存在多长时间。它返回
+键将被删除前还剩的秒数。
+
+<pre><code>
+    <a href="#run">TTL resource:lock</a> => 113
+    <a href="#comment" class="comment">// 113秒后</a>
+    <a href="#run">TTL resource:lock</a> => -2
+</code></pre>
+
+键的 [TTL](#help) 的 *-2* 表示键不（再）存在。
+键的 [TTL](#help) 的 *-1* 表示它永远不会过期。请注意，
+如果您 [SET](#help) 一个键，它的 [TTL](#help) 将被重置。
+
+<pre><code>
+    <a href="#run">SET resource:lock "Redis Demo 1"</a>
+    <a href="#run">EXPIRE resource:lock 120</a>
+    <a href="#run">TTL resource:lock</a> => 119
+    <a href="#run">SET resource:lock "Redis Demo 2"</a>
+    <a href="#run">TTL resource:lock</a> => -1
+</code></pre>
+
+[SET](#help) 命令实际上能够接受更多参数，以便
+直接为键设置生存时间（TTL），因此您可以
+在单个原子操作中更改键的值并同时设置其TTL：
+
+<pre><code>
+    <a href="#run">SET resource:lock "Redis Demo 3" EX 5</a>
+    <a href="#run">TTL resource:lock</a> => 5
+</code></pre>
+
+也可以取消键的生存时间，删除过期属性并
+使键再次永久。
+
+<pre><code>
+    <a href="#run">SET resource:lock "Redis Demo 3" EX 5</a>
+    <a href="#run">PERSIST resource:lock</a>
+    <a href="#run">TTL resource:lock</a> => -1
+</code></pre>
