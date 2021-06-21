@@ -1,0 +1,8 @@
+The return value of [SADD](#help) is as important as the one of [SREM](#help).
+If the element we try to add is already inside, then 0 is returned, otherwise
+[SADD](#help) returns 1:
+
+<pre></code>
+    <a href="#run">SADD superpowers "flight"</a> => 0
+    <a href="#run">SADD superpowers "invisibility"</a> => 1
+</code></pre>
