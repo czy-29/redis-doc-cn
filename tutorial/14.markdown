@@ -1,0 +1,30 @@
+简单的字符串、集合和排序集合已经完成了很多工作，但Redis还可以处理另一种数据类型：哈希。
+
+哈希是字符串字段和字符串值之间的映射，因此它们是
+表示对象的完美数据类型（例如：具有
+姓名、姓氏、年龄等多个字段的用户）：
+
+<pre></code>
+    <a href="#run">HSET user:1000 name "John Smith"</a>
+    <a href="#run">HSET user:1000 email "john.smith@example.com"</a>
+    <a href="#run">HSET user:1000 password "s3cret"</a>
+</code></pre>
+
+要取回保存的数据，请使用 [HGETALL](#help):
+
+<pre></code>
+    <a href="#run">HGETALL user:1000</a>
+</code></pre>
+
+您还可以一次设置多个字段：
+
+<pre></code>
+    <a href="#run">HMSET user:1001 name "Mary Jones" password "hidden" email "mjones@example.com"</a>
+</code></pre>
+
+如果您只需要一个字段的值，这也是可能的：
+
+<pre></code>
+    <a href="#run">HGET user:1001 name</a> => "Mary Jones"
+</code></pre>
+
