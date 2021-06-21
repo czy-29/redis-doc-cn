@@ -1,0 +1,24 @@
+我们将研究的下一个数据结构是集合。集合类似于
+列表，但它没有特定的顺序，且每个元素只能出现
+一次。这两种数据结构都非常有用，因为虽然在列表中
+可以快速访问顶部或底部附近的元素，并且
+元素的顺序被保留，但在集合中测试元素归属非常快，即：
+可以立即知道是否添加了给定元素。此外，
+在一个集合中，一个给定的元素只能存在一个副本。
+
+可用于集合的一些重要命令有：[SADD](#help)、[SREM](#help)、[SISMEMBER](#help)、[SMEMBERS](#help) 和 [SUNION](#help)。
+
+[SADD](#help) 将给定的成员添加到集合中，同样这个命令也是可变参数。
+
+<pre></code>
+    <a href="#run">SADD superpowers "flight"</a>
+    <a href="#run">SADD superpowers "x-ray vision" "reflexes"</a>
+</code></pre>
+
+[SREM](#help) 从集合中删除给定的成员，返回1或0以表示
+该成员是否实际存在。
+
+<pre></code>
+    <a href="#run">SREM superpowers "reflexes"</a> => 1
+    <a href="#run">SREM superpowers "making pizza"</a> => 0
+</code></pre>

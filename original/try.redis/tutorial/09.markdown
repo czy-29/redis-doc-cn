@@ -1,0 +1,24 @@
+The next data structure that we'll look at is a set. A set is similar to a
+list, except it does not have a specific order and each element may only appear
+once. Both the data structures are very useful because while in a list
+is fast to access the elements near the top or the bottom, and the order of
+the elements is preserved, in a set is very fast to test for membership, that
+is, to immediately know if a given element was added or not. Moreover in
+a set a given element can exist only in a single copy.
+
+Some of the important commands in working with sets are [SADD](#help), [SREM](#help), [SISMEMBER](#help), [SMEMBERS](#help) and [SUNION](#help).
+
+[SADD](#help) adds the given member to the set, again this command is also variadic.
+
+<pre></code>
+    <a href="#run">SADD superpowers "flight"</a>
+    <a href="#run">SADD superpowers "x-ray vision" "reflexes"</a>
+</code></pre>
+
+[SREM](#help) removes the given member from the set, returning 1 or 0 to signal
+if the member was actually there or not.
+
+<pre></code>
+    <a href="#run">SREM superpowers "reflexes"</a> => 1
+    <a href="#run">SREM superpowers "making pizza"</a> => 0
+</code></pre>
