@@ -1,0 +1,26 @@
+Other basic operations provided by Redis are [DEL](#help) to delete a given key and associated value,
+[INCR](#help) to atomically increment a number stored at a given key:
+
+<pre><code>
+    <a href="#run">SET connections 10</a>
+    <a href="#run">INCR connections</a> => 11
+    <a href="#run">INCR connections</a> => 12
+    <a href="#run">DEL connections</a>
+    <a href="#run">INCR connections<a/> => 1
+</code></pre>
+
+It is also possible to increment the number contained inside a key by a specific amount:
+
+<pre><code>
+    <a href="#run">INCRBY connections 100</a> => 101
+</code></pre>
+
+And there are similar commands in order to decrement the value of the key.
+
+<pre><code>
+    <a href="#run">DECR connections</a> => 100
+    <a href="#run">DECRBY connections 10</a> => 90
+</code></pre>
+
+When you manipulate Redis strings with incrementing and decrementing commands, you are
+implementing _counters_. Counters are a very popular application for Redis.
