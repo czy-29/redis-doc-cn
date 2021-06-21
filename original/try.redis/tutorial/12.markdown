@@ -1,0 +1,24 @@
+Sets also have a command very similar to [LPOP](#help) and [RPOP](#help)
+in order to extract elements from the set and return them to the client
+in a single operation. However since sets are not ordered data structures
+the returned (and removed) elements are totally casual in this case.
+
+<pre></code>
+    <a href="#run">SADD letters a b c d e f</a> => 6
+    <a href="#run">SPOP letters 2</a> => 1) "c" 2) "a"
+</code></pre>
+
+The argument of [SPOP](#help) after the name of the key, is the number
+of elements we want it to return, and remove from the set.
+
+Now the set will have just the remaining elements:
+
+<pre></code>
+    <a href="#run">SMEMBERS letters</a> => 1) "b" 2) "d" 3) "e" 4) "f"
+</code></pre>
+
+There is also a command to return random elements without removing such
+elements from the set, it is called [SRANDMEMBER](#help). You can try it
+yourself, the arguments are similar to [SPOP](#help), but if you specify
+a negative count instead of a positive one, it may also return repeating
+elements.

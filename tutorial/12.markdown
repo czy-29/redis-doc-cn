@@ -1,0 +1,24 @@
+集合也有一个与 [LPOP](#help) and [RPOP](#help) 非常相似的命令，
+以便从集合中抽取元素并在单个操作中
+将它们返回给客户端。然而，由于集合不是有序的数据结构，
+因此在这种情况下返回（和删除）的元素是完全随意的。
+
+<pre></code>
+    <a href="#run">SADD letters a b c d e f</a> => 6
+    <a href="#run">SPOP letters 2</a> => 1) "c" 2) "a"
+</code></pre>
+
+键名后的 [SPOP](#help) 参数是
+我们希望它返回并从集合中删除的元素数。
+
+现在该集合将只有以下剩余的元素：
+
+<pre></code>
+    <a href="#run">SMEMBERS letters</a> => 1) "b" 2) "d" 3) "e" 4) "f"
+</code></pre>
+
+还有一个命令可以返回随机元素而不
+从集合中删除这些元素，它被称为 [SRANDMEMBER](#help)。你可以自己
+试试，参数和 [SPOP](#help) 类似，但是如果你指定
+负数而不是正数，它也可能返回重复
+元素。
