@@ -1,0 +1,21 @@
+Redis also supports several more complex data structures. The first one we'll
+look at is a list.  A list is a series of ordered values.  Some of the
+important commands for interacting with lists are [RPUSH](#help), [LPUSH](#help), [LLEN](#help), [LRANGE](#help), [LPOP](#help), and [RPOP](#help).  You can immediately begin working with a key as a list, as long as it doesn't already exist as a different type.
+
+This concept is generally true for every Redis data structure: you don't create
+a key first, and add things to it later, but you can just directly use the command in order to add new elements. As side effect the key will be created if it did not exist. Similarly keys that will result empty after executing some command will automatically be removed from the key space.
+
+[RPUSH](#help) puts the new element at the end of the list.
+
+<pre><code>
+    <a href="#run">RPUSH friends "Alice"</a>
+    <a href="#run">RPUSH friends "Bob"</a>
+</code></pre>
+
+[LPUSH](#help) puts the new element at the start of the list.
+
+<pre><code>
+    <a href="#run">LPUSH friends "Sam"</a>
+</code></pre>
+
+

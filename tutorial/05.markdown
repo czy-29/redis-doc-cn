@@ -1,0 +1,21 @@
+Redis还支持几种更复杂的数据结构。我们要
+看的第一个是列表。列表是一系列有序的值。与
+列表交互的一些重要命令有 [RPUSH](#help)、[LPUSH](#help)、[LLEN](#help)、[LRANGE](#help)、[LPOP](#help) 和 [RPOP](#help)。您可以立即开始作为一个列表来使用一个键，只要它还没有作为其它类型而存在。
+
+这个概念通常适用于每个Redis数据结构：您不会先创建
+一个键，然后再向其添加内容，相反您可以直接使用命令来添加新元素。它的副作用是，如果键不存在，则将创建该键。类似地，在执行某些命令后将导致值为空的键，将自动从键空间中删除。
+
+[RPUSH](#help) 将新元素放在列表的末尾。
+
+<pre><code>
+    <a href="#run">RPUSH friends "Alice"</a>
+    <a href="#run">RPUSH friends "Bob"</a>
+</code></pre>
+
+[LPUSH](#help) 将新元素放在列表的开头。
+
+<pre><code>
+    <a href="#run">LPUSH friends "Sam"</a>
+</code></pre>
+
+
