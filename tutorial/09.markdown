@@ -8,7 +8,7 @@
 
 可用于集合的一些重要命令有：[SADD](#help)、[SREM](#help)、[SISMEMBER](#help)、[SMEMBERS](#help) 和 [SUNION](#help)。
 
-[SADD](#help) 将给定的成员添加到集合中，同样这个命令也是可变参数。
+[SADD](#help) 将给定的成员添加到集合中，同样这个命令也是可变参数的。
 
 <pre></code>
     <a href="#run">SADD superpowers "flight"</a>
