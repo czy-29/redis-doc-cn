@@ -1,5 +1,5 @@
 # redis-doc-cn
-这里是Redis官方文档的中文翻译版，原版文档内容来自[redis-io](https://github.com/redis/redis-io)、[redis-doc](https://github.com/redis/redis-doc)和[try.redis](https://github.com/redis/try.redis)三个仓库。
+这里是Redis官方文档的中文翻译版，原版文档内容来自[redis](https://github.com/redis/redis)、[redis-io](https://github.com/redis/redis-io)、[redis-doc](https://github.com/redis/redis-doc)和[try.redis](https://github.com/redis/try.redis)四个仓库。
 
 # Redis简介
 Redis是一个开源（BSD协议）的内存**数据结构存储**，可用作数据库、缓存和消息中间件。Redis提供了诸如
