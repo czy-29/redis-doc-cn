@@ -7,4 +7,4 @@ Redis是一个开源（BSD协议）的内存**数据结构存储**，可用作�
 [了解更多 →](/topics/introduction.md)
 
 # 导航
-[文档](/documentation.md)、[社区](/community.md)、[支持](/support.md)、[教程](/tutorial)、[Redis宣言](/MANIFESTO)
+[文档](/documentation.md)、[社区](/community.md)、[支持](/support.md)、[教程](/tutorial)、[Redis宣言](/MANIFESTO)、[主仓库README](/redis.md)
