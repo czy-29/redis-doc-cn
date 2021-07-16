@@ -65,7 +65,7 @@ Redis可以使用内置的默认配置在没有配置文件的情况下
 [CONFIG SET](/commands/config-set.md) 和
 [CONFIG GET](/commands/config-get.md) 以编程方式查询当前配置。
 
-并非所有配置指令都以这种方式支持，但大多数
+并非所有配置指令都以这种方式被支持，但大多数
 都按预期支持。有关更多信息，
 请参阅 [CONFIG SET](/commands/config-set.md) 和 [CONFIG GET](/commands/config-get.md)
 页面。
@@ -75,7 +75,7 @@ Redis可以使用内置的默认配置在没有配置文件的情况下
 旧配置。
 
 确保还根据您使用 [CONFIG SET](/commands/config-set.md) 设置的配置
-相应地修改了 `redis.conf` 文件。你可以手动完成，或者从Redis 2.8开始，你可以只使用 [CONFIG REWRITE](/commands/config-rewrite.md)，它会自动扫描你的 `redis.conf` 文件并更新与当前配置值不匹配的字段。不存在但设置为默认值的字段不会添加。配置文件中的注释会被保留。
+相应地修改了 `redis.conf` 文件。你可以手动完成，或者从Redis 2.8开始，你可以只使用 [CONFIG REWRITE](/commands/config-rewrite.md)，它会自动扫描你的 `redis.conf` 文件并更新与当前配置值不匹配的字段。不存在但设置为默认值的字段不会被添加。配置文件中的注释会被保留。
 
 将Redis配置为缓存
 ---
