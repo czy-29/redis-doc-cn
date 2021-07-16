@@ -14,9 +14,9 @@ Redis 3.0.x、2.8.x 和 2.6.x 中已知的严重bug列表
 
 要查找关键bug列表，请参阅更新日志：
 
-* [Redis 3.0更新日志](https://raw.githubusercontent.com/redis/redis/3.0/00-RELEASENOTES).
-* [Redis 2.8更新日志](https://raw.githubusercontent.com/redis/redis/2.8/00-RELEASENOTES).
-* [Redis 2.6更新日志](https://raw.githubusercontent.com/redis/redis/2.6/00-RELEASENOTES).
+* [Redis 3.0更新日志](https://raw.githubusercontent.com/redis/redis/3.0/00-RELEASENOTES)。
+* [Redis 2.8更新日志](https://raw.githubusercontent.com/redis/redis/2.8/00-RELEASENOTES)。
+* [Redis 2.6更新日志](https://raw.githubusercontent.com/redis/redis/2.6/00-RELEASENOTES)。
 
 检查每个补丁版本中的 *升级紧急* 程度，以便更轻松地发现
 包含重要修复的版本。
