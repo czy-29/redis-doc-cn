@@ -19,7 +19,7 @@ Redis 经验的人。阅读本文档将帮助您：
 不鼓励使用Linux发行版的包管理器安装它，
 因为通常可用的版本不是最新的。
 
-您可以从[redis.io](https://redis.io)网站下载最新的Redis tar ball，也可以使用这个始终指向最新稳定Redis版本的特殊URL，即：[http://download.redis.io/redis-stable.tar.gz](http://download.redis.io/redis-stable.tar.gz).
+您可以从 [redis.io](https://redis.io) 网站下载最新的Redis tar ball，也可以使用这个始终指向最新稳定Redis版本的特殊URL，即：[http://download.redis.io/redis-stable.tar.gz](http://download.redis.io/redis-stable.tar.gz).
 
 为了编译Redis，请遵循以下简单步骤：
 
@@ -109,7 +109,7 @@ Redis 经验的人。阅读本文档将帮助您：
 当然，仅从命令行接口使用Redis是不够的，因为
 目标是在您的应用程序中使用它。为此，您需要
 为您使用的编程语言下载并安装Redis客户端库。
-您可以[在此页面中找到不同语言的完整客户端列表](https://redis.io/clients)。
+您可以 [在此页面中找到不同语言的完整客户端列表](https://redis.io/clients)。
 
 例如，如果您碰巧使用Ruby编程语言，我们最好的建议
 是使用 [Redis-rb](https://github.com/redis/redis-rb) 客户端。
@@ -135,12 +135,12 @@ Redis 经验的人。阅读本文档将帮助您：
 Redis持久化
 =================
 
-您可以[在此页面上了解Redis持久化的工作原理](/topics/persistence.md)，但是对于快速入门而言，重要的是要了解默认情况下，如果您使用默认配置启动Redis，Redis只会不时自发地保存数据集（例如如果您的数据至少有100次更改，则至少间隔五分钟），因此如果您希望数据库在重启后持久保存并重新加载，请确保每次要强制执行数据集快照时手动调用 **SAVE** 命令。否则请确保使用 **SHUTDOWN** 命令关闭数据库：
+您可以 [在此页面上了解Redis持久化的工作原理](/topics/persistence.md)，但是对于快速入门而言，重要的是要了解默认情况下，如果您使用默认配置启动Redis，Redis只会不时自发地保存数据集（例如如果您的数据至少有100次更改，则至少间隔五分钟），因此如果您希望数据库在重启后持久保存并重新加载，请确保每次要强制执行数据集快照时手动调用 **SAVE** 命令。否则请确保使用 **SHUTDOWN** 命令关闭数据库：
 
     $ redis-cli shutdown
 
 这样Redis将确保在退出之前将数据保存在磁盘上。
-强烈建议阅读[持久性页面](/topics/persistence.md)，以便更好地了解Redis持久性的工作原理。
+强烈建议阅读 [持久性页面](/topics/persistence.md)，以便更好地了解Redis持久性的工作原理。
 
 更正确地安装Redis
 ==============================

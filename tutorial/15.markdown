@@ -8,4 +8,4 @@
     <a href="#run">HINCRBY user:1000 visits 1</a> => 1
 </code></pre>
 
-查看[哈希命令的完整列表](http://redis.io/commands#hash)以获取更多信息。
+查看 [哈希命令的完整列表](http://redis.io/commands#hash) 以获取更多信息。

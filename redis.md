@@ -1,4 +1,4 @@
-这个README只是一个 *快速入门* 文档。您可以在[redis.io](https://redis.io)上找到更详细的文档。
+这个README只是一个 *快速入门* 文档。您可以在 [redis.io](https://redis.io) 上找到更详细的文档。
 
 什么是Redis？
 --------------

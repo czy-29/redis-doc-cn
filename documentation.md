@@ -1,12 +1,12 @@
 文档
 ===
 
-注意：Redis文档也在[redis-doc github仓库](http://github.com/redis/redis-doc)中以原始（计算机友好）的格式提供。Redis文档是在[Creative Commons Attribution-ShareAlike 4.0国际许可](https://creativecommons.org/licenses/by-sa/4.0/)下发布的。
+注意：Redis文档也在 [redis-doc github仓库](http://github.com/redis/redis-doc) 中以原始（计算机友好）的格式提供。Redis文档是在 [Creative Commons Attribution-ShareAlike 4.0国际许可](https://creativecommons.org/licenses/by-sa/4.0/) 下发布的。
 
 使用Redis编程
 ---
 
-* Redis实现的[命令的完整列表](https://redis.io/commands)，以及每个命令的完整文档。
+* Redis实现的 [命令的完整列表](https://redis.io/commands)，以及每个命令的完整文档。
 * [管线](/topics/pipelining.md)：了解如何一次发送多个命令，
 节省RTT时间。
 * [Redis发布/订阅](topics/pubsub.md)：Redis是一个快速稳定的发布/订阅消息系统！一探究竟。
@@ -29,7 +29,7 @@ Redis模块API
 
 * [Redis模块介绍](/topics/modules-intro.md)。开始学习Redis 4.0模块编程的好地方。
 * [实现原生数据类型](/topics/modules-native-types.md)。模块可以实现看起来像内置数据类型的新数据类型（数据结构等）。本文档涵盖了用于实现它的API。
-* 模块的[阻塞操作](topics/modules-blocking-ops.md)。这仍然是一个实验性的 API，但它非常强大，可以编写命令，阻塞客户端（不阻塞Redis），并且可以在其他线程中执行任务。
+* 模块的 [阻塞操作](topics/modules-blocking-ops.md)。这仍然是一个实验性的 API，但它非常强大，可以编写命令，阻塞客户端（不阻塞Redis），并且可以在其他线程中执行任务。
 * [Redis模块API参考](topics/modules-api-ref.md)。直接从`src/module.c`源代码的顶部注释生成。包含许多关于API使用的底层细节。
 
 教程 & FAQ
@@ -70,7 +70,7 @@ Redis持久性时的选项。
 故障排除
 ---
 
-* [Redis遇到问题？](/topics/problems.md)：Bug？高延迟？其他问题？使用[我们的问题疑难解答页面](/topics/problems.md)作为起点来查找更多信息。
+* [Redis遇到问题？](/topics/problems.md)：Bug？高延迟？其他问题？使用 [我们的问题疑难解答页面](/topics/problems.md) 作为起点来查找更多信息。
 
 Redis集群
 ---
@@ -82,7 +82,7 @@ Redis集群
 ---
 
 * [Redis CRDTs](https://redislabs.com/redis-enterprise/technology/active-active-geo-distribution/) Redis的active-active地理分布解决方案。
-* [Roshi](https://github.com/soundcloud/roshi)是一个基于Redis的时间戳事件的大规模CRDT集实现，并使用Go实现。它最初是为[SoundCloud流](http://developers.soundcloud.com/blog/roshi-a-crdt-system-for-timestamped-events)开发的。
+* [Roshi](https://github.com/soundcloud/roshi) 是一个基于Redis的时间戳事件的大规模CRDT集实现，并使用Go实现。它最初是为 [SoundCloud流](http://developers.soundcloud.com/blog/roshi-a-crdt-system-for-timestamped-events) 开发的。
 
 SSD和持久内存上的Redis
 ---
@@ -96,7 +96,7 @@ SSD和持久内存上的Redis
 * [Redis协议规范](/topics/protocol.md)：如果您正在实现
 客户端，或者出于好奇，请从底层学习
 如何与Redis通信。
-* [Redis RDB格式](https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format)规范，以及[RDB版本历史](https://github.com/sripathikrishnan/redis-rdb-tools/blob/master/docs/RDB_Version_History.textile)。
+* [Redis RDB格式](https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format) 规范，以及 [RDB版本历史](https://github.com/sripathikrishnan/redis-rdb-tools/blob/master/docs/RDB_Version_History.textile)。
 * [内幕](/topics/internals.md)：了解有关Redis如何实现的幕后详细信息。
 
 资源
@@ -130,19 +130,19 @@ SSD和持久内存上的Redis
 鸣谢
 ---
 
-Redis由[Redis社区](/community.md)开发和维护。
+Redis由 [Redis社区](/community.md) 开发和维护。
 
-该项目由[Salvatore Sanfilippo](http://twitter.com/antirez)创建、开发和维护，直到[2020年6月30日](http://antirez.com/news/133)。过去，[Pieter Noordhuis](http://twitter.com/pnoordhuis)和[Matt Stancliff](https://matt.sh)为Redis核心库和客户端库提供了大量代码和想法。
+该项目由 [Salvatore Sanfilippo](http://twitter.com/antirez) 创建、开发和维护，直到 [2020年6月30日](http://antirez.com/news/133)。过去，[Pieter Noordhuis](http://twitter.com/pnoordhuis) 和 [Matt Stancliff](https://matt.sh) 为Redis核心库和客户端库提供了大量代码和想法。
 
-Redis贡献者的完整列表可以在[Github的Redis贡献者页面](https://github.com/redis/redis/graphs/contributors)中找到。然而，还有其他形式的贡献，例如想法、测试和错误报告。如果可能，贡献会在提交消息中得到确认。[邮件列表档案](http://groups.google.com/group/redis-db)和[Github问题页面](https://github.com/redis/redis/issues)是寻找活跃在Redis社区中提供想法和帮助其他用户的人的好来源。
+Redis贡献者的完整列表可以在 [Github的Redis贡献者页面](https://github.com/redis/redis/graphs/contributors) 中找到。然而，还有其他形式的贡献，例如想法、测试和错误报告。如果可能，贡献会在提交消息中得到确认。[邮件列表档案](http://groups.google.com/group/redis-db) 和 [Github问题页面](https://github.com/redis/redis/issues) 是寻找活跃在Redis社区中提供想法和帮助其他用户的人的好来源。
 
 赞助商
 ---
 
-[Salvatore Sanfilippo](http://antirez.com)为开发Redis所做的工作由[Redis Labs](http://redislabs.com)赞助。Redis项目的其他赞助商和过去的赞助商列在[赞助商页面](/topics/sponsors.md)中。
+[Salvatore Sanfilippo](http://antirez.com) 为开发Redis所做的工作由 [Redis Labs](http://redislabs.com) 赞助。Redis项目的其他赞助商和过去的赞助商列在 [赞助商页面](/topics/sponsors.md) 中。
 
 许可证、商标和Logo
 ---
 
-* Redis是在three clause BSD许可下发布的。您可以[在我们的许可页面中找到更多信息](/topics/license.md)。
-* Redis商标和徽标归Redis Labs Ltd. 所有，请阅读[Redis商标指南](/topics/trademark.md)，了解我们有关使用Redis商标和徽标的政策。
+* Redis是在three clause BSD许可下发布的。您可以 [在我们的许可页面中找到更多信息](/topics/license.md)。
+* Redis商标和徽标归Redis Labs Ltd. 所有，请阅读 [Redis商标指南](/topics/trademark.md)，了解我们有关使用Redis商标和徽标的政策。
