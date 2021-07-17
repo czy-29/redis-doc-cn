@@ -23,7 +23,7 @@ Salvatore Sanfilippo已辞去该项目负责人的职务，并任命了两位继
 * 项目负责人：来自Redis Labs的 Yossi Gottlieb（[yossigo](https://github.com/yossigo)）
 * 项目负责人：来自Redis Labs的 Oran Agra（[oranagra](https://github.com/oranagra)）
 * 社区负责人：来自Redis Labs的 Itamar Haber（[itamarhaber](https://github.com/itamarhaber)）
-* 成员：来自阿里巴巴的 Zhao Zhao（[soloestoy](https://github.com/soloestoy)）（译者注：不知道这位大佬的中文姓名，怕翻译错，有认识这位大佬的可以补充下^_^）
+* 成员：来自阿里巴巴的 Zhao Zhao（[soloestoy](https://github.com/soloestoy)）（译者注：不知道这位大佬的中文姓名，怕翻译错，有认识这位大佬的朋友可以补充下^_^）
 * 成员：来自Amazon Web Services的 Madelyn Olson（[madolson](https://github.com/madolson)）
 
 Redis核心团队成员服务于Redis开源项目和社区。他们应根据项目采用的 [行为准则](https://www.contributor-covenant.org/) 在行为、文化和语气方面树立良好榜样。他们还应该考虑项目和社区的最大利益并采取行动，不受外来利益或利益冲突的影响。
@@ -47,7 +47,7 @@ Redis核心团队成员服务于Redis开源项目和社区。他们应根据项�
 
 #### 决策
 
-* **正常的决定** 将由核心团队成员基于lazy consensus方法做出：每个成员可以投票+1（积极）或-1（消极）。反对票必须包括彻底的推理并最好包含一个更好的替代提案。核心团队将始终尝试达成完全共识而不是少数服从多数。正常决策的例子：
+* **常规决策** 将由核心团队成员基于lazy consensus方法做出：每个成员可以投票+1（同意）或-1（反对）。反对票必须包括彻底的推理并最好包含一个更好的替代提案。核心团队将始终尝试达成完全共识而不是少数服从多数。常规决策的例子：
     * pull requests和关闭issues的日常批准
     * 打开新issues供讨论
 * **重大决策** 包含对Redis架构、设计或理念以及核心团队结构或成员变更有重大影响的决策，最好由完全共识决定。如果团队无法达成完全共识，则需要多数票。重大决策示例：
@@ -55,7 +55,7 @@ Redis核心团队成员服务于Redis开源项目和社区。他们应根据项�
     *   添加新的数据结构
     *   新版RESP（Redis序列化协议）
     *   影响向后兼容性的更改
-    *   核心团队成员添加或变更
+    *   核心团队成员的添加或变更
 * 项目负责人有权否决重大决策
 
 #### 核心团队成员
@@ -78,8 +78,8 @@ Redis核心源代码库托管在 [https://github.com/redis/redis](https://github
 
 ## 项目和开发更新
 
-与项目和社区保持联系！有关项目和社区更新，请关注项目 [频道](/community.md)。开发公告将通过 [Redis邮件列表](https://groups.google.com/forum/#!forum/redis-db) 发布。
+与项目和社区保持联系！有关项目和社区的更新，请关注项目 [频道](/community.md)。开发公告将通过 [Redis邮件列表](https://groups.google.com/forum/#!forum/redis-db) 发布。
 
 ## 这些治理规则的更新
 
-这些规则的任何实质性更改都将被视为重大决策。细微的变化或ministerial corrections（译者注：不知道怎么翻译了，如有好翻译欢迎pr）将被视为正常的决定。
+这些规则的任何实质性更改都将被视为重大决策。细微的变化或ministerial corrections（译者注：不知道怎么翻译了，如有好翻译欢迎pr）将被视为常规决策。
