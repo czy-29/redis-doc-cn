@@ -8,10 +8,10 @@ Redis设置提示
 -----------------
 
 + 我们建议使用 **Linux操作系统** 部署Redis。Redis也在OS X上进行了大量测试，并不时在FreeBSD和OpenBSD系统上进行测试。然而，Linux是我们进行所有主要压力测试的地方，也是大多数生产部署运行的地方。
-+ 确保将Linux内核 **过量使用内存设置为1**。将 `vm.overcommit_memory = 1` 添加到 `/etc/sysctl.conf` 然后重新启动或运行命令 `sysctl vm.overcommit_memory=1` 使其立即生效。
++ 确保将Linux内核 **overcommit memory设置为1**。将 `vm.overcommit_memory = 1` 添加到 `/etc/sysctl.conf` 然后重新启动或运行命令 `sysctl vm.overcommit_memory=1` 使其立即生效。
 + 确保Redis不会受到Linux内核 *透明大页面* 特性的影响，否则会对内存使用和延迟产生负面影响。这是通过以下命令完成的：`echo madvise > /sys/kernel/mm/transparent_hugepage/enabled`。
 + 确保在您的系统中 **设置一些交换**（我们建议与内存一样多）。如果Linux没有swap并且你的Redis实例不小心消耗了太多内存，要么Redis在内存不足时崩溃，要么Linux内核OOM杀手会杀死Redis进程。启用交换后，Redis的工作方式会很糟糕，但您可能会注意到延迟高峰，并在为时已晚之前采取行动。
-+ 在您的实例中设置一个显式的 `maxmemory` 选项限制，以确保当接近达到系统内存限制时，实例将报告错误而不是失败。请注意，`maxmemory` 的设置应计算Redis除数据之外的开销以及碎片开销。因此，如果您认为您有10GB的可用内存，请将其设置为8或9+。如果你在一个非常write-heavy的应用程序中使用Redis，在磁盘上保存一个RDB文件或重写AOF日志时 **Redis可能会使用通常使用的内存的2倍**。使用的额外内存与保存过程中写入修改的内存页数成正比，因此通常与这段时间内接触的键（或聚合类型项）的数量成正比。确保相应地调整内存大小。
++ 在您的实例中设置一个显式的 `maxmemory` 选项限制，以确保当接近达到系统内存限制时，实例将报告错误而不是崩溃。请注意，`maxmemory` 的设置应计算Redis除数据之外的开销以及碎片开销。因此，如果您认为您有10GB的可用内存，请将其设置为8或9+。如果你在一个非常write-heavy的应用程序中使用Redis，在磁盘上保存一个RDB文件或重写AOF日志时 **Redis可能会使用通常使用的内存的2倍**。使用的额外内存与保存过程中写入修改的内存页数成正比，因此通常与这段时间内接触的键（或聚合类型项）的数量成正比。确保相应地调整内存大小。
 + 在daemontools下运行时使用 `daemonize no`。
 + 确保设置一些不小的replication backlog，必须与Redis使用的内存量成比例地设置。在20GB的实例中，只有1MB的backlog是没有意义的。backlog将允许副本轻松地与主实例重新同步。
 + 即使您禁用了持久性，如果您使用replication，Redis也需要执行RDB保存，除非您使用新的无盘复制功能。如果master上没有磁盘空间可以使用，请确保启用无盘复制。
