@@ -24,7 +24,7 @@ JPEG 图像或序列化的Ruby对象。
 ---
 
 Redis列表只是字符串列表，按插入顺序排序。
-可以将元素添加到 Redis 列表，将新元素推送到列表的头部（左侧）或尾部（右侧）。
+可以将元素添加到Redis列表，将新元素推送到列表的头部（左侧）或尾部（右侧）。
 
 [LPUSH](/commands/lpush.md) 命令在头部插入一个新元素，而
 [RPUSH](/commands/rpush.md) 命令在尾部插入一个新元素。当对空键
@@ -43,7 +43,7 @@ Redis列表只是字符串列表，按插入顺序排序。
 列表的最大长度为2^32 - 1个元素（4294967295，每个列表超过40亿个元素）。
 
 从时间复杂度的角度来看，Redis Lists的主要特点是
-持常量时间插入和删除靠近头部和尾部的
+支持常量时间插入和删除靠近头部和尾部的
 元素，即使插入了数百万个条目。
 访问列表两端附近的元素非常快，但
 如果您尝试访问非常大的列表的中间部分，则速度很慢，因为它是
@@ -51,12 +51,12 @@ O(N) 操作。
 
 你可以用Redis列表做很多有趣的事情，例如你可以：
 
-* 为社交网络中的时间线建模，使用 [LPUSH](/commands/lpush.md) 以在用户时间线中添加新元素，并使用 [LRANGE](/commands/lrange.md) 以检索一些最近插入的项目。
-* 您可以将 [LPUSH](/commands/lpush.md) 与 [LTRIM](/commands/ltrim.md) 一起使用来创建一个列表，该列表永远不会超过给定的元素数量，但只记住最新的 N 个元素。
+* 为社交网络中的时间线建模，使用 [LPUSH](/commands/lpush.md) 以在用户时间线中添加新元素，并使用 [LRANGE](/commands/lrange.md) 以检索一些最近插入的条目。
+* 您可以将 [LPUSH](/commands/lpush.md) 与 [LTRIM](/commands/ltrim.md) 一起使用来创建一个列表，该列表永远不会超过给定的元素数量，但只记住最新的N个元素。
 * 列表可以用作消息传递原语，例如参见众所周知的用于创建后台作业的 [Resque](https://github.com/resque/resque) Ruby 库。
 * 你可以用列表做更多的事情，这种数据类型支持许多命令，包括像 [BLPOP](/commands/blpop.md) 这样的阻塞命令。
 
-请查看所有 [可用的操作列表的命令](https://redis.io/commands#list) 以获取更多信息，或阅读 [Redis数据类型介绍](/topics/data-types-intro.md)。
+请查看所有 [可用的操作列表的命令](https://redis.io/commands#list) 以获取更多信息，或阅读 [Redis数据类型简介](/topics/data-types-intro.md)。
 
 <a name="sets"></a>
 集合
@@ -138,7 +138,7 @@ Redis Sorted Sets类似于Redis Sets，是非重复的字符串
 例如，如果您有许多表示用户的散列，则可以使用以用户年龄作为分数，以用户ID作为值的有序集合。因此，使用 [ZRANGEBYSCORE](/commands/zrangebyscore.md) 检索具有给定年龄间隔的所有用户将是举手之劳且快速的。
 
 
-Sorted Sets可能是最高级的Redis数据类型，所以花一些时间查看 [Sorted Set命令的完整列表](https://redis.io/commands#sorted_set)，以发现你可以用 Redis 做什么！您可能还想阅读 [Redis数据类型简介](/topics/data-types-intro.md)。
+Sorted Sets可能是最高级的Redis数据类型，所以花一些时间查看 [Sorted Set命令的完整列表](https://redis.io/commands#sorted_set)，以发现你可以用Redis做什么！您可能还想阅读 [Redis数据类型简介](/topics/data-types-intro.md)。
 
 Bitmaps和HyperLogLogs
 ---
