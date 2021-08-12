@@ -65,7 +65,7 @@ Redis持久性时的选项。
 ---
 
 * [ARM和树莓派上的Redis](/topics/ARM.md)：从Redis 4.0开始，ARM和树莓派是官方支持的平台。此页面包含一般信息和基准测试。
-* [可在此处找到适用于IoT和边缘计算的Redis参考实现](https://redislabs.com/redis-enterprise/redis-edge/)。
+* [可在此处找到适用于IoT和边缘计算的Redis参考实现](https://redis.com/redis-enterprise/redis-edge/)。
 
 故障排除
 ---
@@ -81,13 +81,13 @@ Redis集群
 其他基于Redis的分布式系统
 ---
 
-* [Redis CRDTs](https://redislabs.com/redis-enterprise/technology/active-active-geo-distribution/) Redis的active-active地理分布解决方案。
+* [Redis CRDTs](https://redis.com/redis-enterprise/technology/active-active-geo-distribution/) Redis的active-active地理分布解决方案。
 * [Roshi](https://github.com/soundcloud/roshi) 是一个基于Redis的时间戳事件的大规模CRDT集实现，并使用Go实现。它最初是为 [SoundCloud流](http://developers.soundcloud.com/blog/roshi-a-crdt-system-for-timestamped-events) 开发的。
 
 SSD和持久内存上的Redis
 ---
 
-* [Redis on Flash](https://redislabs.com/redis-enterprise/technology/redis-on-flash/) by Redis Labs使用SSD和持久内存扩展了DRAM容量。
+* [Redis on Flash](https://redis.com/redis-enterprise/technology/redis-on-flash/) by Redis Ltd.使用SSD和持久内存扩展了DRAM容量。
 
 规范
 ---
@@ -139,10 +139,10 @@ Redis贡献者的完整列表可以在 [Github的Redis贡献者页面](https://g
 赞助商
 ---
 
-[Salvatore Sanfilippo](http://antirez.com) 为开发Redis所做的工作由 [Redis Labs](http://redislabs.com) 赞助。Redis项目的其他赞助商和过去的赞助商列在 [赞助商页面](/topics/sponsors.md) 中。
+[Salvatore Sanfilippo](http://antirez.com) 为开发Redis所做的工作由 [Redis Ltd.](http://redis.com) 赞助。Redis项目的其他赞助商和过去的赞助商列在 [赞助商页面](/topics/sponsors.md) 中。
 
 许可证、商标和Logo
 ---
 
 * Redis是在three clause BSD许可下发布的。您可以 [在我们的许可页面中找到更多信息](/topics/license.md)。
-* Redis商标和徽标归Redis Labs Ltd. 所有，请阅读 [Redis商标指南](/topics/trademark.md)，了解我们有关使用Redis商标和徽标的政策。
+* Redis商标和徽标归Redis Ltd. 所有，请阅读 [Redis商标指南](/topics/trademark.md)，了解我们有关使用Redis商标和徽标的政策。

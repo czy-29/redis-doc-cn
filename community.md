@@ -24,10 +24,10 @@ Redis采用了一种旨在成为精英管理的轻型治理模型，旨在赋予
 Conferences and meetups
 ---
 
-* [Redis Live](https://meetups.redislabs.com/redis-live/)
-* [RedisConf Annual Conference](https://redislabs.com/redisconf)
-* [Redis Day Seattle](https://connect.redislabs.com/redisdayseattle/mktg)
-* [Redis Day Bangalore](https://connect.redislabs.com/redisdaybangalore)
+* [Redis Live](https://meetups.redis.com/redis-live/)
+* [RedisConf Annual Conference](https://redis.com/redisconf)
+* [Redis Day Seattle](https://connect.redis.com/redisdayseattle/mktg)
+* [Redis Day Bangalore](https://connect.redis.com/redisdaybangalore)
 * [London Redis Meetup Group](https://www.meetup.com/Redis-London)
 * [San Francisco Meetup Group](http://sfmeetup.redis.io)
 * [New York Meetup Group](https://www.meetup.com/New-York-REDIS-Meetup)
