@@ -1,7 +1,7 @@
 Redis赞助商
 ===
 
-从2015年6月开始，[Salvatore Sanfilippo](http://twitter.com/antirez) 为开发Redis所做的工作由 [Redis Labs](https://redislabs.com) 赞助。
+2015年至2020年6月期间，Salvatore Sanfilippo 为开发Redis所做的工作由 [Redis Ltd.](https://redis.com) 赞助。截至2020年6月，Redis Ltd. 赞助了Redis项目 [治理](/topics/governance.md)。
 
 过往赞助：
 
@@ -22,7 +22,7 @@ Redis赞助商
 * [Brad Jasper](http://bradjasper.com/)
 * [Mrkris](http://www.mrkris.com/)
 
-我们感谢 [Redis Labs](http://redislabs.com)、[Pivotal](http://gopivotal.com)、[VMware](http://vmware.com) 以及其他为Redis项目捐款的公司和个人。谢谢你们。
+我们感谢 [Redis Ltd.](http://redis.com)、[Pivotal](http://gopivotal.com)、[VMware](http://vmware.com) 以及其他为Redis项目捐款的公司和个人。谢谢你们。
 
 ## redis.io
 
@@ -32,8 +32,7 @@ Redis赞助商
 
 他们还赞助了 [Damian Janowski](https://twitter.com/djanowski)
 和 [Michel Martens](https://twitter.com/soveran)
-对该网站的初始实现。Damian和Michel仍然是当前的
-维护者。
+对该网站的初始实现。
 
 `redis.io` 域名由 [I Want My Name](https://iwantmyname.com)
 捐赠给该项目几年。
