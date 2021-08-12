@@ -1,7 +1,7 @@
 Redis赞助商
 ===
 
-2015年至2020年6月期间，Salvatore Sanfilippo 为开发Redis所做的工作由 [Redis Ltd.](https://redis.com) 赞助。截至2020年6月，Redis Ltd. 赞助了Redis项目 [治理](/topics/governance.md)。
+2015年至2020年6月期间，Salvatore Sanfilippo 为开发Redis所做的工作由 [Redis Ltd.](https://redis.com) 赞助。截至2020年6月，Redis Ltd. 赞助了Redis的项目 [治理](/topics/governance.md)。
 
 过往赞助：
 
