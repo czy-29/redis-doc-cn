@@ -87,7 +87,7 @@ Redis集群
 SSD和持久内存上的Redis
 ---
 
-* [Redis on Flash](https://redis.com/redis-enterprise/technology/redis-on-flash/) by Redis Ltd.使用SSD和持久内存扩展了DRAM容量。
+* [Redis on Flash](https://redis.com/redis-enterprise/technology/redis-on-flash/) by Redis Ltd. 使用SSD和持久内存扩展了DRAM容量。
 
 规范
 ---
