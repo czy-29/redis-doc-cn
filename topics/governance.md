@@ -4,7 +4,7 @@
 
 自2009年以来，Redis开源项目变得非常成功并且非常受欢迎。
 
-在此期间，Salvatore Sanfillipo领导、管理和维护了该项目。虽然来自Redis Labs和其他地方的贡献者做出了重大贡献，但该项目从未采用正式的治理结构，事实上，它是作为 [BDFL](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life) 风格的项目运行的。
+在此期间，Salvatore Sanfillipo领导、管理和维护了该项目。虽然来自Redis Ltd.和其他地方的贡献者做出了重大贡献，但该项目从未采用正式的治理结构，事实上，它是作为 [BDFL](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life) 风格的项目运行的。
 
 随着Redis的成长、成熟和其用户群的不断扩大，为Redis的持续开发和维护形成可持续的结构变得越来越重要。我们希望确保项目的连续性并投射出更大的社区。
 
@@ -16,13 +16,13 @@ Redis采用了 _轻量级治理_ 模型，该模型与项目当前的规模相�
 
 Salvatore Sanfilippo已辞去该项目负责人的职务，并任命了两位继任者接替并领导Redis项目：Yossi Gottlieb（[yossigo](https://github.com/yossigo)）和 Oran Agra（[oranagra](https://github.com/oranagra)）
 
-在Redis Labs的支持和加持下，我们希望借此机会，打造一个更加开放、可伸缩、社区驱动的“核心团队”架构来运行项目。核心团队将由这样选择出来的成员组成，他们是经过时间证明的长期个人参与和贡献者。
+在Redis Ltd.的支持和加持下，我们希望借此机会，打造一个更加开放、可伸缩、社区驱动的“核心团队”架构来运行项目。核心团队将由这样选择出来的成员组成，他们是经过时间证明的长期个人参与和贡献者。
 
 核心团队包括：
 
-* 项目负责人：来自Redis Labs的 Yossi Gottlieb（[yossigo](https://github.com/yossigo)）
-* 项目负责人：来自Redis Labs的 Oran Agra（[oranagra](https://github.com/oranagra)）
-* 社区负责人：来自Redis Labs的 Itamar Haber（[itamarhaber](https://github.com/itamarhaber)）
+* 项目负责人：来自Redis Ltd.的 Yossi Gottlieb（[yossigo](https://github.com/yossigo)）
+* 项目负责人：来自Redis Ltd.的 Oran Agra（[oranagra](https://github.com/oranagra)）
+* 社区负责人：来自Redis Ltd.的 Itamar Haber（[itamarhaber](https://github.com/itamarhaber)）
 * 成员：来自阿里巴巴的 Zhao Zhao（[soloestoy](https://github.com/soloestoy)）（译者注：不知道这位大佬的中文姓名，怕翻译错，有认识这位大佬的朋友可以补充下^_^）
 * 成员：来自Amazon Web Services的 Madelyn Olson（[madolson](https://github.com/madolson)）
 
@@ -61,8 +61,8 @@ Redis核心团队成员服务于Redis开源项目和社区。他们应根据项�
 #### 核心团队成员
 
 * 核心团队预计不会终身服务，但需要长期参与以提供Redis编程风格和社区的稳定性和一致性。
-* 如果必须更换由Redis Labs资助的核心团队成员，则由Redis Labs与其余核心团队成员协商后指定替代人员。
-* 如果非Redis Labs资助的核心团队成员不再参与，无论出于何种原因，其他团队成员将选择替代者。
+* 如果必须更换由Redis Ltd.资助的核心团队成员，则由Redis Ltd.与其余核心团队成员协商后指定替代人员。
+* 如果非Redis Ltd.资助的核心团队成员不再参与，无论出于何种原因，其他团队成员将选择替代者。
 
 ## 社区论坛和交流
 
