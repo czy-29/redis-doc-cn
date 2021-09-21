@@ -4,7 +4,7 @@
 
 自2009年以来，Redis开源项目变得非常成功并且非常受欢迎。
 
-在此期间，Salvatore Sanfillipo领导、管理和维护了该项目。虽然来自Redis Ltd.和其他地方的贡献者做出了重大贡献，但该项目从未采用正式的治理结构，事实上，它是作为 [BDFL](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life) 风格的项目运行的。
+在此期间，Salvatore Sanfillipo领导、管理和维护了该项目。虽然来自 [Redis Ltd.](https://redis.com) 和其他地方的贡献者做出了重大贡献，但该项目从未采用正式的治理结构，事实上，它是作为 [BDFL](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life) 风格的项目运行的。
 
 随着Redis的成长、成熟和其用户群的不断扩大，为Redis的持续开发和维护形成可持续的结构变得越来越重要。我们希望确保项目的连续性并投射出更大的社区。
 
