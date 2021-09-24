@@ -39,14 +39,14 @@ Redis被设计为可以在您的服务器中运行很长时间的进程。
 
 以下步骤提供了一种非常常用的方法，以避免任何停机时间。
 
-* 将新Redis实例设置为当前Redis实例的slave。为此，您需要一台不同的服务器，或者一台具有足够RAM以保持两个Redis实例同时运行的服务器。
-* 如果使用单台服务器，请确保slave在与master实例不同的端口上启动，否则slave将根本无法启动。
-* 等待复制初始同步完成（检查slave的日志文件）。
-* 使用 INFO 确保master和slave中的键数相同。使用 redis-cli 检查slave是否按您的意愿工作并正在回复您的命令。
-* 使用 **CONFIG SET slave-read-only no** 以允许slave执行写操作。
-* 配置所有客户端以使用新实例（即slave）。请注意，您可能需要使用 `CLIENT PAUSE` 命令以确保在切换期间没有客户端可以写入旧master服务器。
-* 一旦您确定master不再接收任何查询（您可以使用 [MONITOR命令](/commands/monitor.md) 检查这一点），请使用 **SLAVEOF NO ONE** 命令将slave选举为master，然后关闭您的master。
+* 将新Redis实例设置为当前Redis实例的replica。为此，您需要一台不同的服务器，或者一台具有足够RAM以保持两个Redis实例同时运行的服务器。
+* 如果使用单台服务器，请确保replica在与master实例不同的端口上启动，否则replica将根本无法启动。
+* 等待复制初始同步完成（检查replica的日志文件）。
+* 使用 INFO 确保master和replica中的键数相同。使用 redis-cli 检查replica是否按您的意愿工作并正在回复您的命令。
+* 使用 **CONFIG SET slave-read-only no** 以允许replica执行写操作。
+* 配置所有客户端以使用新实例（即replica）。请注意，您可能需要使用 `CLIENT PAUSE` 命令以确保在切换期间没有客户端可以写入旧master服务器。
+* 一旦您确定master不再接收任何查询（您可以使用 [MONITOR命令](/commands/monitor.md) 检查这一点），请使用 **REPLICAOF NO ONE** 命令将replica选举为master，然后关闭您的master。
 
-如果您使用的是 [Redis Sentinel](/topics/sentine.md) 或 [Redis Cluster](/topics/cluster-tutorial.md)，升级到新版本的最简单方法是依次升级每一个slave，然后执行手动故障转移以将升级后的副本之一提升为master，并最终提升最后一个slave。
+如果您使用的是 [Redis Sentinel](/topics/sentine.md) 或 [Redis Cluster](/topics/cluster-tutorial.md)，升级到新版本的最简单方法是依次升级每一个replica，然后执行手动故障转移以将升级后的副本之一提升为master，并最终提升最后一个replica。
 
 但请注意，Redis Cluster 4.0在集群总线协议级别与Redis Cluster 3.2不兼容，因此在这种情况下需要大规模重启。但是Redis 5集群总线向后兼容Redis 4。
