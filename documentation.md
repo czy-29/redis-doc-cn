@@ -58,9 +58,13 @@ Redis持久性时的选项。
 * [信号处理](/topics/signals.md)：Redis如何处理信号。
 * [连接处理](/topics/clients.md)：Redis如何处理客户端连接。
 * [高可用性](/topics/sentinel.md)：Redis Sentinel是Redis的官方高可用解决方案。
+* [Redis发布](/topics/releases.md)：Redis开发周期和版本编号。
+
+性能
+---
 * [延迟监控](/topics/latency-monitor.md)：Redis集成的延迟监控和报告功能有助于为低延迟工作负载调整Redis实例。
 * [基准](/topics/benchmarks.md)：看看Redis在不同平台上有多快。
-* [Redis发布](/topics/releases.md)：Redis开发周期和版本编号。
+* [Redis on-CPU分析和跟踪](/topics/performance-on-cpu.md)：了解如何在Redis中执行on-CPU资源瓶颈分析。
 
 嵌入式和物联网
 ---
