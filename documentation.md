@@ -44,6 +44,7 @@ Redis模块API
 
 管理
 ---
+* [快速开始](/topics/quickstart.md)：如何快速安装和配置Redis。这针对没有Redis经验的人。
 * [Redis-cli](/topics/rediscli.md)：了解如何掌握Redis命令行接口，您将经常使用它来管理、排除故障和试验Redis。
 * [配置](/topics/config.md)：如何配置Redis。
 * [Replication](/topics/replication.md)：设置
